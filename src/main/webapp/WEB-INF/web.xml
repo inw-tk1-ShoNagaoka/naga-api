@@ -1,0 +1,28 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>MainServlet</servlet-name>
+  	<display-name>MainServlet</display-name>
+  	<description>メインリクエスト</description>
+  	<servlet-class>jp.co.naga.servlet.MainServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CalendarServlet</servlet-name>
+  	<display-name>CalendarServlet</display-name>
+  	<description>カレンダー表示</description>
+  	<servlet-class>jp.co.naga.servlet.CalendarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MainServlet</servlet-name>
+  	<url-pattern>/MainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CalendarServlet</servlet-name>
+  	<url-pattern>/Calendar</url-pattern>
+  </servlet-mapping>
+</web-app>
+
